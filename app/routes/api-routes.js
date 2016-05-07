@@ -36,10 +36,22 @@ module.exports = function(app){
 		//save the difference in an array
 		//check the array for the lowest value
 		//spit out the index of the person with the lowest difference and return that as the data value.
-		
+		var totalDifference = 0;
+		for(i=0; i<friends.length;i++){
+			var current = friends[i];
+			for(j=0;j<character.scores.length;j++){
+				totalDifference += Math.abs(character.scores[j] - current.scores[j]);
+			}
+
+		}
+
+		console.log(totalDifference);
+
+
 		// Then send it to the ORM to "save" into the DB.
-		orm.addCharacter(character, function(data){
-		});
+		friends.push(character);
+
+		
 
 
 
