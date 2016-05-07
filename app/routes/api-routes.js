@@ -11,8 +11,13 @@ var MF	 			= {
 						photo: "URL",
 						scores: [5,4,3,2,1,2,3,5,4,1]
 					}
+var LL 				= {
+						name: "Lisa",
+						photo: "URL",
+						scores: [2,4,5,2,5,2,3,2,1,1]
+					}
 
-					friends.push(MF);
+					friends.push(MF, LL);
 
 // Routes
 // =============================================================
@@ -44,13 +49,14 @@ module.exports = function(app){
 				totalDifference += Math.abs(character.scores[j] - current.scores[j]);
 			}
 			diff.push(totalDifference);
+			totalDifference = 0;
 
 		}
 
 		console.log(diff);
 		var min = diff[0];
 		var minIndex = 0;
-		for(i=1;i<diff.length;i++){
+		for(i=0;i<diff.length;i++){
 			if(diff[i]<min){
 				minIndex = i;
 				min = diff[i];
@@ -58,10 +64,12 @@ module.exports = function(app){
 		}
 
 		console.log(minIndex);
+		console.log(friends[minIndex]);
 
 
 		// Then send it to the ORM to "save" into the DB.
 		friends.push(character);
+		res.send(friends[minIndex]);
 
 		
 
