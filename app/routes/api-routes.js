@@ -8,12 +8,12 @@
 var friends 		= [];
 var MF	 			= {
 						name: "maike",
-						photo: "URL",
+						photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAidAAAAJDYyYmNlMTYzLTI2ZTUtNDI0MS1iYzVlLWVkZGFlMzRhN2Q5Mg.jpg",
 						scores: [5,4,3,2,1,2,3,5,4,1]
 					}
 var LL 				= {
 						name: "Lisa",
-						photo: "URL",
+						photo: "https://work2futurefoundation1.org/wp-content/uploads/2015/06/epic-young-adult.jpg",
 						scores: [2,4,5,2,5,2,3,2,1,1]
 					}
 
