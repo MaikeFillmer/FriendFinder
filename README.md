@@ -3,7 +3,7 @@
 
 ## About
 
-Friend Finder is a quick quiz you can take to find out if you can find some other friends!
+Friend Finder is a quick quiz you can take to help you find some other friends!
 
 ## Technologies Used:
 
